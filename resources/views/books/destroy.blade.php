@@ -7,4 +7,4 @@
 <h2>{{ title }}</h2>
 <h3>{{ author }}</h3>
 <p>{{ released_at }}</p>
-<a href="/books">All books</a>
+<a href="/books">All books</a> 
