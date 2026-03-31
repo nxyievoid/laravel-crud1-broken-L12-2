@@ -13,7 +13,7 @@ Route::get('/about', function () {
 Route::get('/books', [BookController::class, 'index']);
 Route::get('/books/create', [BookController::class, 'create']);
 Route::post('/books', [BookController::class, 'store']);
-Route::get('/books', [BookController::class, 'destroy']);
+Route::get('/books/show', [BookController::class, 'destroy']);
 // {{ $id }} /{{$id}}/destroy
-Route::get('/books/{{ $id }}/edit', [BookController::class, 'edit']);
+Route::get('/books/{{ $book->$id }}/edit', [BookController::class, 'edit']);
 Route::delete('/books/{{$singleBook->id}}/destroy', [BookController::class, 'destroy']);

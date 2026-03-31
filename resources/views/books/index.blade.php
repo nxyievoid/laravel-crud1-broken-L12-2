@@ -5,7 +5,7 @@
         <li>
             <h2>{{ $book->title }}</h2>
             <div>
-                <a href="/books/destroy">delete</a>
+                <a href="/books/show">show</a>
                 <a href="/books/{{ $book->id }}/edit">Edit</a>
             </div>
         </li>
